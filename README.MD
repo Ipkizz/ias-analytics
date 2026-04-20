@@ -1,7 +1,3 @@
 # IAS "Analytics" - Electronic Database in the Form of an Information and Analytical System IAS "Analytics"
 
-```
-
-The basis for the development of the IAS "Analytics" is the production need to create a single protected information environment for collecting, systematizing and storing regulatory and organizational and administrative documents on aviation security, documentation compiled based on the results of AVSEC quality control measures.
-
-```
+### The basis for the development of the IAS "Analytics" is the production need to create a single protected information environment for collecting, systematizing and storing regulatory and organizational and administrative documents on aviation security, documentation compiled based on the results of AVSEC quality control measures.
