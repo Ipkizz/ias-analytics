@@ -1,0 +1,19 @@
+:root {
+   --background-dark-blue: #1C3044;
+   --background-light-blue: #F5FAFF;
+   --background-white: #FFFFFF;
+   --background-yellow: #FFCC00;
+   --background-blue: #0086C8;
+   --background-red: #FF0000;
+   --background-green: #7DCE55;
+   --background-brown: #D77A16;
+   --background-orange: #f9a74f;
+   --text-dark-blue: #1C3044;
+   --text-white: #FFFFFF;
+   --icon-white: #FFFFFF;
+   --icon-red: #FF0000;
+   --icon-green: #7DCE55;
+   --icon-blue: #0086C8;
+   --icon-brown: #D77A16;
+   --icon-dark-blue: #1C3044;
+}
