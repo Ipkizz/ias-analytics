@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ІАС "АНАЛІТИКА АБ" - Авторизація</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <section class="container">
+            <section class="greet">
+                <div class="logo logo-white logo-screen">
+                    <svg class="logo__img">
+                        <use href="images/sprites.svg#logo-icon"></use>
+                    </svg>
+                    <span class="logo__span">АНТОНОВ / ІАС "Аналітика АБ"</span>
+                </div>
+                <div class="greet__text-wrap">
+                    <h2 class="greet__title">Вітаємо!</h2>
+                    <p class="greet__subtitle">Для отримання доступу до електронної бази даних, будь ласка, авторизуйтесь.</p>
+                </div>
+                <div class="greet__copy greet__copy-screen"> 
+                    <p class="greet__copy-text">
+                        &copy; 2026, АТ "АНТОНОВ"
+                    </p>
+                </div>
+            </section>
+            <section class="auth">
+                <div class="logo logo-dark logo-mobile">
+                    <svg class="logo__img">
+                        <use href="images/sprites.svg#logo-icon"></use>
+                    </svg>
+                    <span class="logo__span">АНТОНОВ / ІАС "Аналітика АБ"</span>
+                </div>
+                <form action="index.html" class="auth__form" method="get">
+                    <h1 class="auth__title">Авторизація</h1>
+                    <div class="auth__login">
+                        <label for="login-input" class="auth__login-label">Логін:</label>
+                        <input type="text" class="auth__login-field" id="login-input" name="login">
+                    </div>
+                    <div class="auth__password">
+                        <label for="password-input" class="auth__password-label">Пароль:</label>
+                        <input type="password" class="auth__password-field" id="password-input" name="password">
+                    </div>
+                    <div class="auth__checkbox">
+                        <div class="auth__checkbox-wrap">
+                            <input type="checkbox" class="auth__checkbox-elem" id="checkbox" name="remember">
+                            <label for="checkbox" class="auth__checkbox-label">Запам'ятати мене</label>
+                        </div>
+                        <a href="#" title="Забули пароль?" class="auth__password-recover">Забули пароль?</a>
+                    </div>
+                    <button class="auth__btn btn" type="button">Авторизуватись</button>
+                </form>
+                <div class="auth__notification">
+                    <p class="auth__notification-desc">Бажаєте залишити добровільне сповіщення щодо виявленого порушення у системі забезпечення АБ?</p>
+                    <button class="auth__notification-btn btn" type="button">Надати сповіщення</button>
+                </div>
+                <div class="greet__copy greet__copy-mobile">
+                    <p class="greet__copy-text">
+                        &copy; 2026, АТ "АНТОНОВ"
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

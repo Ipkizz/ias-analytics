@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ІАС "АНАЛІТИКА АБ" - Архів документів</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <section class="container">
+            <section class="content-wrapper">
+                <header class="header">
+                    <div class="block-wrapper">
+                        <nav class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="index.html" class="breadcrumbs__link">Сторінка 1</a>
+                                </li>
+                                <span class="breadcrumbs__item-separator">/</span>
+                                <li class="breadcrumbs__item">
+                                    <a href="index.html" class="breadcrumbs__link">Сторінка 2</a>
+                                </li>
+                                <span class="breadcrumbs__item-separator">/</span>
+                                <li class="breadcrumbs__item">
+                                    <span class="breadcrumbs__current">Поточна сторінка</span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="user">
+                            <span class="user__name">Валерій Котович</span>
+                            <span class="user__checked">
+                                <svg class="user__checked-icon">
+                                    <use href="images/sprites.svg#user-check-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="user__unchecked" hidden>
+                                <svg class="user__unchecked-icon">
+                                    <use href="images/sprites.svg#user-unchecked-icon"></use>
+                                </svg>
+                            </span>
+                            <a href="#" class="user__logout">
+                                <svg class="user__logout-icon">
+                                    <use href="images/sprites.svg#enter-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block-wrapper">
+                        <h1 class="header__title">Архів документів</h1>
+                        <div class="header__form-wrap">
+                            <div class="logo logo-white logo-mobile">
+                                <svg class="logo__img">
+                                    <use href="images/sprites.svg#logo-icon"></use>
+                                </svg>
+                                <span class="logo__span">АНТОНОВ / ІАС "Аналітика АБ"</span>
+                            </div>
+                            <form action="" method="" class="header__search">
+                                <input type="text" name="search" class="header__search-input">
+                                <button type="submit" class="header__search-btn">
+                                    <svg class="search__img">
+                                        <use href="images/sprites.svg#search-icon"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                            <div class="filters">
+                                <label for="filters-toggler" class="filters__switcher">
+                                    <svg class="filters__switcher-icon">
+                                        <use href="images/sprites.svg#equalizer-icon"></use>
+                                    </svg>
+                                </label>
+                                <label for="nav-toggler" class="nav__switcher-mob">
+                                    <svg class="nav__switcher-mob-icon">
+                                        <use href="images/sprites.svg#burger-icon"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <input type="checkbox" id="filters-toggler" class="filters__toggler">
+                <section class="filters__content">
+                    <form action="" class="filters__form" method="">
+                        <h3 class="filters__form-title">Фільтри</h3>
+                        <div class="filters__form-element">
+                            <span class="filters__form-subtitle">Сфера</span>
+                            <select name="sphere" class="filters__form-filter">
+                                <option value="" class="filters__form-filter-element">Усі</option>
+                                <option value="" class="filters__form-filter-element">Контроль доступу</option>
+                                <option value="" class="filters__form-filter-element">Охорона ПС</option>
+                                <option value="" class="filters__form-filter-element">Підготовка персоналу</option>
+                                <option value="" class="filters__form-filter-element">Оцінка ризиків</option>
+                            </select>
+                        </div>
+                        <div class="filters__form-element">
+                            <span class="filters__form-subtitle">Категорія</span>
+                            <select name="sphere" class="filters__form-filter">
+                                <option value="" class="filters__form-filter-element">Усі</option>
+                                <option value="" class="filters__form-filter-element">Організаційно-розпорядчі</option>
+                                <option value="" class="filters__form-filter-element">Нормативно-правові</option>
+                                <option value="" class="filters__form-filter-element">Інформаційні</option>
+                                <option value="" class="filters__form-filter-element">По особовому складу</option>
+                            </select>
+                        </div>
+                        <div class="filters__form-element">
+                            <span class="filters__form-subtitle">Видавник</span>
+                            <select name="sphere" class="filters__form-filter">
+                                <option value="" class="filters__form-filter-element">Усі</option>
+                                <option value="" class="filters__form-filter-element">КМУ</option>
+                                <option value="" class="filters__form-filter-element">ВРУ</option>
+                                <option value="" class="filters__form-filter-element">МРГтТУ</option>
+                                <option value="" class="filters__form-filter-element">ДАСУ</option>
+                                <option value="" class="filters__form-filter-element">АТ "АНТОНОВ"</option>
+                                <option value="" class="filters__form-filter-element">ЕСАС</option>
+                                <option value="" class="filters__form-filter-element">ІСАО</option>
+                            </select>
+                        </div>
+                        <div class="filters__form-element">
+                            <span class="filters__form-subtitle">Вид документа</span>
+                            <select name="sphere" class="filters__form-filter">
+                                <option value="" class="filters__form-filter-element">Усі</option>
+                                <option value="" class="filters__form-filter-element">Закон</option>
+                                <option value="" class="filters__form-filter-element">Постанова</option>
+                                <option value="" class="filters__form-filter-element">Наказ</option>
+                                <option value="" class="filters__form-filter-element">Авіаційні правила</option>
+                                <option value="" class="filters__form-filter-element">Інструкція</option>
+                                <option value="" class="filters__form-filter-element">Технологія</option>
+                                <option value="" class="filters__form-filter-element">Програма</option>
+                            </select>
+                        </div>
+                        <div class="filters__form-btn-wrap">
+                            <button type="reset" class="btn-sm filters__form-btn-clear">Очистити</button>
+                            <button type="submit" class="btn-sm filters__form-btn-submit">Застосувати</button>
+                        </div>
+                    </form>
+                    <label for="filters-toggler" class="filters__switcher-cross">
+                        <svg class="filters__switcher-icon-cross">
+                            <use href="images/sprites.svg#cross-icon"></use>
+                        </svg>
+                    </label>
+                </section>
+                <input type="checkbox" id="nav-toggler" class="nav__toggler">
+                <nav class="nav">
+                    <label for="nav-toggler" class="nav__switcher">
+                        <svg class="nav__switcher-icon">
+                            <use href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </label>
+                    <div class="logo logo-white logo-sidebar">
+                        <svg class="logo__img">
+                            <use href="images/sprites.svg#logo-icon"></use>
+                        </svg>
+                        <span class="logo__span">АНТОНОВ / ІАС "Аналітика АБ"</span>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link-active" title="Архів документів">
+                                <svg class="nav__link-img">
+                                    <use href="images/sprites.svg#books-icon"></use>
+                                </svg>
+                                <span class="nav__link-title">Архів документів</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" title="Об'єкти">
+                                <svg class="nav__link-img">
+                                    <use href="images/sprites.svg#library-icon"></use>
+                                </svg>
+                                <span class="nav__link-title">Об'єкти</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" title="Контроль якості">
+                                <svg class="nav__link-img">
+                                    <use href="images/sprites.svg#clipboard-icon"></use>
+                                </svg>
+                                <span class="nav__link-title">Контроль якості</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" title="Аналітика">
+                                <svg class="nav__link-img">
+                                    <use href="images/sprites.svg#stats-dots-icon"></use>
+                                </svg>
+                                <span class="nav__link-title">Аналітика</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" title="Перевірки">
+                                <svg class="nav__link-img">
+                                    <use href="images/sprites.svg#eye-icon"></use>
+                                </svg>
+                                <span class="nav__link-title">Перевірки</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <label for="nav-toggler" class="nav__switcher-mob-cross">
+                        <svg class="nav__switcher-mob-cross-icon">
+                            <use href="images/sprites.svg#cross-icon"></use>
+                        </svg>
+                    </label>
+                </nav>
+                <main class="main">
+                    <div class="header-mob__wrap">
+                        <form action="" method="" class="header-mob__search">
+                            <input type="text" name="search"  class="header-mob__search-input">
+                            <button type="submit"  class="header-mob__search-btn">
+                                <svg class="search__img-mob">
+                                    <use href="images/sprites.svg#search-icon"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <h1 class="header-mob__title">Архів документів</h1>
+                    </div>
+                    <table class="table-arch">
+                        <thead class="table-arch__header">
+                            <tr class="table-arch__row">
+                                <th class="table-arch__head table-arch__col1">Файл</th>
+                                <th class="table-arch__head table-arch__col2">Назва документа</th>
+                                <th class="table-arch__head table-arch__col3">Номер</th>
+                                <th class="table-arch__head table-arch__col4">Дата</th>
+                                <th class="table-arch__head table-arch__col5">Вид</th>
+                                <th class="table-arch__head table-arch__col6">Видавник</th>
+                                <th class="table-arch__head table-arch__col7">Статус</th>
+                                <th class="table-arch__head table-arch__col8">Дії</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-arch__body">
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-pdf">
+                                        <use href="images/sprites.svg#file-pdf-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>Державна програма авіаційної безпеки цивільної авіації</p> 
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">1965-VIII</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">Закон</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">ВРУ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Чинний</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-pdf">
+                                        <use href="images/sprites.svg#file-pdf-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>Перелік предметів та речовин, заборонених до перевезення повітряним транспортом ЦА</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">723</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">Постанова</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">КМУ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Втратив чинність</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8 doc-actions">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-word">
+                                        <use href="images/sprites.svg#file-word-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>Положення про сектор забезпечення контролю якості авіаційної безпеки</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">7689</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">Положення</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">АНТОНОВ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Чинний</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8 doc-actions">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-exel">
+                                        <use href="images/sprites.svg#file-excel-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>План проведення заходів контролю якості авіаційної безпеки на 2026 рік</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">555</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">План</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">АНТОНОВ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Чинний</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8 doc-actions">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-pdf">
+                                        <use href="images/sprites.svg#file-pdf-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>Державна програма авіаційної безпеки цивільної авіації</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">1965-VIII</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">Закон</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">ВРУ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Чинний</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-pdf">
+                                        <use href="images/sprites.svg#file-pdf-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>Перелік предметів та речовин, заборонених до перевезення повітряним транспортом ЦА</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">723</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">Постанова</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">КМУ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Втратив чинність</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8 doc-actions">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-word">
+                                        <use href="images/sprites.svg#file-word-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>Положення про сектор забезпечення контролю якості авіаційної безпеки</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">7689</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">Положення</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">АНТОНОВ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Чинний</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8 doc-actions">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-arch__row">
+                                <td data-label="Файл" class="table-arch__cell table-arch__col1">
+                                    <svg class="table-arch__doc-icon icon-exel">
+                                        <use href="images/sprites.svg#file-excel-icon"></use>
+                                    </svg>
+                                </td>
+                                <td data-label="Назва документа" class="table-arch__cell table-arch__col2">
+                                    <p>План проведення заходів контролю якості авіаційної безпеки на 2026 рік</p>
+                                </td>
+                                <td data-label="Номер" class="table-arch__cell table-arch__col3">555</td>
+                                <td data-label="Дата" class="table-arch__cell table-arch__col4">21.03.2017</td>
+                                <td data-label="Вид" class="table-arch__cell table-arch__col5">План</td>
+                                <td data-label="Видавник" class="table-arch__cell table-arch__col6">АНТОНОВ</td>
+                                <td data-label="Статус" class="table-arch__cell table-arch__col7">Чинний</td>
+                                <td data-label="Дії" class="table-arch__cell table-arch__col8 doc-actions">
+                                    <div>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-eye">
+                                                <use href="images/sprites.svg#eye-icon"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="table-arch__doc-action">
+                                            <svg class="table-arch__doc-action-icon icon-arrow-down">
+                                                <use href="images/sprites.svg#arrow-down-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </main>
+                <footer class="footer">
+                    <nav class="pagination-container">
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-prev">&laquo;</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link active">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <span class="pagination-ellipsis">...</span>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">10</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">11</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-next">&raquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </footer>
+            </section>
+        </section>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

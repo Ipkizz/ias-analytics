@@ -1,0 +1,130 @@
+.filters__content {
+   visibility: hidden;
+   transition: visibility 0.22s ease-out;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   background: var(--background-white-transparent);
+}
+
+.filters__form {
+   width: 500px;
+   margin: 0 auto;
+   background: var(--background-white);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border: 1px solid var(--background-dark-blue);
+   border-radius: 3px;
+   padding: 20px 20px 20px 20px;
+}
+
+.filters__form-title {
+   font-size: 24px;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+   margin: 0 0 30px 0;
+   color: var(--text-dark-blue);
+}
+
+.filters__form-element {
+   margin: 0 0 10px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.filters__form-subtitle {
+   font-size: 14px;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+   color: var(--text-dark-blue);
+}
+
+.filters__form-filter {
+   width: 60%;
+   height: 40px;
+   border-radius: 5px;
+   border: 1px solid var(--background-dark-blue);
+   padding: 0 10px 0 10px;
+   font-size: 14px;
+   letter-spacing: 0.5px;
+   color: var(--text-dark-blue);
+   outline: none;
+}
+
+.filters__form-btn-wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 40px 0 0 0;
+}
+
+.filters__form-btn-clear {
+   width: 200px;
+   padding: 0;
+   color: var(--text-dark-blue);
+   background: var(--background-white);
+   transition: background 0.22s ease-out;
+}
+
+.filters__form-btn-submit {
+   width: 200px;
+   padding: 0;
+   color: var(--text-white);
+   background: var(--background-blue);
+   transition: background 0.22s ease-out;
+}
+
+.filters__form-btn-clear:hover,
+.filters__form-btn-submit:hover {
+   background: var(--background-dark-blue);
+   color: var(--text-white);
+   cursor: pointer;
+}
+
+.filters__toggler:checked + .filters__content {
+   visibility: visible;
+}
+
+.filters__switcher-cross {
+   position: absolute;
+   top: 30px;
+   right: 20px;
+   display: block;
+   width: 40px;
+   height: 40px;
+   background: none;
+   border: none;
+}
+
+.filters__switcher-icon-cross {
+   display: block;
+   width: 100%;
+   height: 100%;
+   transition: color 0.22s ease-out;
+   color: var(--text-dark-blue);
+}
+
+.filters__switcher-icon-cross:hover {
+   cursor: pointer;
+   color: var(--text-blue);
+}
+
+@media all and (max-width: 768px) {
+   .filters__form {
+      width: 90%;
+   }
+
+   .filters__form-btn-clear {
+      width: 180px;
+   }
+
+   .filters__form-btn-submit {
+      width: 180px;
+   }
+}
